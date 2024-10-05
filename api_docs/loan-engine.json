@@ -1,0 +1,257 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2024-10-05T15:13:59.221Z",
+    "__export_source": "insomnia.desktop.app:v10.0.0",
+    "resources": [
+      {
+        "_id": "req_056b85ab426b49a98731e946be42946d",
+        "parentId": "wrk_f27781388ba7460f8150b44281bf542c",
+        "modified": 1728134664865,
+        "created": 1728133906752,
+        "url": "http://localhost:8080/loan/available",
+        "name": "Get available loan",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [
+          {
+            "id": "pair_1621a23eb628471393d09d91d438d8cf",
+            "name": "page",
+            "value": "1",
+            "description": "",
+            "disabled": false
+          },
+          {
+            "id": "pair_3c9ae19bdf574b6ebb5a189982acb247",
+            "name": "page_size",
+            "value": "10",
+            "description": "",
+            "disabled": false
+          }
+        ],
+        "headers": [
+          {
+            "name": "User-Agent",
+            "value": "insomnia/10.0.0"
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1728133906752,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "wrk_f27781388ba7460f8150b44281bf542c",
+        "parentId": null,
+        "modified": 1727973159543,
+        "created": 1727973159543,
+        "name": "Loan Engine",
+        "description": "",
+        "scope": "collection",
+        "_type": "workspace"
+      },
+      {
+        "_id": "req_eac97dc5dc2040639e93a075fde6688a",
+        "parentId": "wrk_f27781388ba7460f8150b44281bf542c",
+        "modified": 1728140511215,
+        "created": 1728136419402,
+        "url": "localhost:8080/loan/3",
+        "name": "Get loan by id",
+        "description": "",
+        "method": "GET",
+        "body": {},
+        "parameters": [],
+        "headers": [
+          {
+            "name": "User-Agent",
+            "value": "insomnia/10.0.0"
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1728132936615,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_1f36377947674d4d879704c2709423c5",
+        "parentId": "wrk_f27781388ba7460f8150b44281bf542c",
+        "modified": 1728140699905,
+        "created": 1728131966478,
+        "url": "localhost:8080/loan/disburse",
+        "name": "Disburse loan",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n\t\"loan_id\": 2,\n\t\"aggrement_letter\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAh\",\n\t\"field_officer_employee_id\": 1\n}"
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "name": "User-Agent",
+            "value": "insomnia/10.0.0"
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1728131966478,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_7c8720e02d7c4e55b92cd103c10b9842",
+        "parentId": "wrk_f27781388ba7460f8150b44281bf542c",
+        "modified": 1728140708229,
+        "created": 1728131788507,
+        "url": "localhost:8080/loan/funding",
+        "name": "Funding loan",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n\t\"loan_id\": 2,\n\t\"investor_id\": 2,\n\t\"Amount\": 5000000.00\n}"
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "name": "User-Agent",
+            "value": "insomnia/10.0.0"
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1728131788507,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_6ee8c37e74c746cc9f472dd1e816d29a",
+        "parentId": "wrk_f27781388ba7460f8150b44281bf542c",
+        "modified": 1728140504801,
+        "created": 1728120300553,
+        "url": "localhost:8080/loan/approve",
+        "name": "Approve loan",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n\t\"loan_id\": 3,\n\t\"field_validator_employee_id\": 1,\n\t\"field_validate_picture\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAh\"\n}"
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "name": "User-Agent",
+            "value": "insomnia/10.0.0"
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1728120300553,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "req_bd5ad45068fb4f44b30c0b457d3d9b27",
+        "parentId": "wrk_f27781388ba7460f8150b44281bf542c",
+        "modified": 1728116478382,
+        "created": 1727973171030,
+        "url": "localhost:8080/loan",
+        "name": "Create loan",
+        "description": "",
+        "method": "POST",
+        "body": {
+          "mimeType": "application/json",
+          "text": "{\n\t\"borrower_id\": 1,\n\t\"principal_amount\": 10000000.00,\n\t\"rate\": 5.0,\n\t\"maturity_date\": \"2025-12-31T00:00:00Z\"\n}\n"
+        },
+        "parameters": [],
+        "headers": [
+          {
+            "name": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "name": "User-Agent",
+            "value": "insomnia/10.0.0"
+          }
+        ],
+        "authentication": {},
+        "metaSortKey": -1727973171030,
+        "isPrivate": false,
+        "pathParameters": [],
+        "settingStoreCookies": true,
+        "settingSendCookies": true,
+        "settingDisableRenderRequestBody": false,
+        "settingEncodeUrl": true,
+        "settingRebuildPath": true,
+        "settingFollowRedirects": "global",
+        "_type": "request"
+      },
+      {
+        "_id": "env_9379b5c602bf0468b9f732b88c6756c54ba8ab98",
+        "parentId": "wrk_f27781388ba7460f8150b44281bf542c",
+        "modified": 1727973159547,
+        "created": 1727973159547,
+        "name": "Base Environment",
+        "data": {},
+        "dataPropertyOrder": null,
+        "color": null,
+        "isPrivate": false,
+        "metaSortKey": 1727973159547,
+        "_type": "environment"
+      },
+      {
+        "_id": "jar_9379b5c602bf0468b9f732b88c6756c54ba8ab98",
+        "parentId": "wrk_f27781388ba7460f8150b44281bf542c",
+        "modified": 1727973159548,
+        "created": 1727973159548,
+        "name": "Default Jar",
+        "cookies": [],
+        "_type": "cookie_jar"
+      }
+    ]
+  }
