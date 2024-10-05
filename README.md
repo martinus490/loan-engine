@@ -42,9 +42,7 @@ This project includes a RESTful API that supports the following operations:
 
 ### API Docs
 
-CURL for the API can be found in this link 
-   ```bash
-   https://github.com/martinus490/loan-engine/blob/3ef3e7d138b53792bc38e164ff6c4d8adc385c3e/api_docs/loan-engine.json
+CURL for the API can be found in this [link](https://github.com/martinus490/loan-engine/blob/3ef3e7d138b53792bc38e164ff6c4d8adc385c3e/api_docs/loan-engine.json)
 
 
 ### Improve
