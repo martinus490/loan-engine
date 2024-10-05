@@ -18,12 +18,17 @@ This project includes a RESTful API that supports the following operations:
 
 ### Prerequisites
 
-- Go 1.16 or higher
-- MySQL 
+- Go 1.23
+- MySQL 8.3.0
 
 ### Installation
 
-1. Clone the repository:
+1. Execute migration file
+   ```bash
+   cd migration
+   ```
+   execute DDL in database
+2. Clone the repository:
    ```bash
    git clone https://github.com/martinus490/loan-engine.git
    cd loan-engine
