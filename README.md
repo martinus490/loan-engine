@@ -39,3 +39,8 @@ This project includes a RESTful API that supports the following operations:
    ```bash
    cd tests
    go test ./...
+
+### Improve
+
+1. Can add redis for caching mechanism
+2. Can add database index if needed
